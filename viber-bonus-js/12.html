@@ -1,0 +1,26 @@
+<script>
+  // display a square with color + size from prompt()
+  color = prompt("Enter color name or code")
+  size = +prompt("Enter size in pixel")
+  borderWidth = +prompt("Enter border width")
+  borderColor = prompt("Enter border-color name or code")
+
+  // !!!STRING
+  //"..." or '...' or `...` (the last is the best way)
+
+  document.write(
+    //  template
+    `<div style="
+        background-color: ${color}; 
+        width: ${size}px;
+        height: ${size}px;
+        border: ${borderWidth}px  solid ${borderColor};"
+    >
+    </div>`
+
+  )
+
+  // HW - user -> prompt() -> border width, color 
+</script>
+
+

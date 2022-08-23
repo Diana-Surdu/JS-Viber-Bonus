@@ -1,0 +1,47 @@
+<!--FOOD ORDER dilema-->
+
+<script>
+  // LINEAR
+  foodName1   = "Salad"  // String
+  foodName2   = "Soup"
+  foodName3   = "Steak"
+  foodPrice1  = 15.00    // Number
+  foodPrice2  = 10.00
+  foodPrice3  = 23.00
+  foodAvailQ1 = 5        // Number
+  foodAvailQ2 = 10
+  foodAvailQ3 = 8
+
+  
+
+
+  clientQ1    = parseInt( prompt("How many " + foodName1 + " do you want ?"))
+  clientQ2    = parseInt( prompt("How many " + foodName2 + " do you want ?"))
+  clientQ3    = parseInt( prompt("How many " + foodName3 + " do you want ?"))
+
+  let cost     = (foodPrice1 * clientQ1) + 
+                 (foodPrice2 * clientQ2) + 
+                 (foodPrice3 * clientQ3)
+
+  // Here - DECISION
+  if (foodAvailQ1 >= clientQ1 && foodAvailQ2 >= clientQ2 && foodAvailQ3 >= clientQ3) {
+    alert("Total Cost: " + cost)
+    if(cost >= 80) {
+      alert("You get a free delivery!")
+    }
+    else {
+      alert("To get a free delivery your price odder should be over 80 !")
+    }
+  }
+  else {
+    alert("Sorry we can offer only: " + "\n" + 
+          "Salad: " + foodAvailQ1 + "\n" + 
+          "Soup: " + foodAvailQ2 + "\n" + 
+          "Steak: " + foodAvailQ3)
+  }
+
+
+
+  //       2. add free delivery (if, else)       
+  
+</script>

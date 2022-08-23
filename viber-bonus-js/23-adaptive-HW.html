@@ -1,0 +1,35 @@
+<script>
+
+  // HW: add breakpoits:
+    //               560           980         1200
+    // --------------x-------------x------------x-----------> window size
+    //  extra small      small        medium       large
+
+    // + size < 60 - error
+    //   size > 3000 - error
+  const MIN_POINT    = 60
+  const BREAK_POINT1 = 560
+  const BREAK_POINT2 = 980
+  const BREAK_POINT3 = 1200
+  const MAX_POINT    = 3000 
+
+  let windowWidth = +prompt("Write the width: ")
+
+  if (windowWidth < MIN_POINT) {
+      alert("ERROR! The screen is to small!")
+  } else if(windowWidth <= BREAK_POINT1) {
+      alert("Extra small: " + windowWidth)
+  } else if (windowWidth <= BREAK_POINT2) {
+      alert("Small: " + windowWidth)
+  } else if (windowWidth <= BREAK_POINT3) {
+      alert("Medium: " + windowWidth)
+  } else if (windowWidth < MAX_POINT) {
+      alert("Large: " + windowWidth)
+  } else if (windowWidth >= MAX_POINT) {
+      alert("ERROR! The screen is to small!")
+  } else {
+    alert("Check please the value!")
+  }
+
+
+</script>

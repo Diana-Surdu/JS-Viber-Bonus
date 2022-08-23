@@ -1,0 +1,21 @@
+<!--
+    aka - media query
+-->
+
+<script>
+  // IN data
+    const BREAK_POINT = 1100
+    // ------------x------------> window size 
+    //   mobile  1100  desktop
+
+    //let windowWidth = +prompt("Window size?")
+    let windowWidth = innerWidth // innerHeight
+
+
+    // DECISION / adaptive
+    if (windowWidth>=BREAK_POINT) {
+        alert("Desktop: " + windowWidth)
+    } else {
+        alert("Mobile: " + windowWidth)
+    }
+</script>
